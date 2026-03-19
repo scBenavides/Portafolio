@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de David Santiago Benavides, Junior Cloud / DevOps Engineer enfocado en automatización con Python, Linux, Docker y entornos cloud."
+    />
+    <title>David Santiago Benavides | Junior Cloud / DevOps Engineer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(14, 165, 233, 0.08), transparent 24%),
+          radial-gradient(circle at top right, rgba(59, 130, 246, 0.06), transparent 20%),
+          #f8fafc;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .project-card,
+      .soft-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .project-card:hover,
+      .soft-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .icon-chip {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #0369a1 0%, #2563eb 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body class="text-slate-800 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4 lg:px-8">
+        <a href="#hero" class="flex items-center gap-3 font-semibold tracking-tight text-slate-900">
+          <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white">DS</span>
+          <span>David Santiago Benavides</span>
+        </a>
+
+        <nav class="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-600">
+          <a href="#about" class="rounded-full px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">Sobre mí</a>
+          <a href="#projects" class="rounded-full px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">Proyectos</a>
+          <a href="#stack" class="rounded-full px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">Tech Stack</a>
+          <a href="#contact" class="rounded-full bg-sky-600 px-4 py-2 text-white shadow-sm transition hover:bg-sky-700">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
+        <div class="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+          <div class="reveal">
+            <span class="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-medium text-sky-800">
+              Junior Cloud / DevOps Engineer
+            </span>
+
+            <h1 class="mt-6 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+              David Santiago <span class="gradient-text">Benavides</span>
+            </h1>
+
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+              Construyo soluciones con enfoque en automatización, infraestructura y operaciones cloud.
+              Cuento con <strong class="font-semibold text-slate-900">inglés C1 certificado</strong> para documentación técnica,
+              colaboración internacional y comunicación efectiva con equipos globales.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#projects" class="inline-flex items-center rounded-full bg-slate-900 px-6 py-3 font-medium text-white transition hover:bg-slate-800">
+                Ver proyectos
+              </a>
+              <a href="#contact" class="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
+                Contactar
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal soft-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Snapshot profesional</p>
+            <div class="mt-6 space-y-5">
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <p class="text-sm text-slate-500">Rol actual</p>
+                <p class="mt-1 font-semibold text-slate-900">Intern en Infraestructura IT y Cloud Corporativa</p>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <p class="text-sm text-slate-500">Especialidad en crecimiento</p>
+                <p class="mt-1 font-semibold text-slate-900">Python Automation · Linux Administration · DevOps Foundations</p>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <p class="text-sm text-slate-500">Enfoque actual</p>
+                <p class="mt-1 font-semibold text-slate-900">AWS Cloud Practitioner · Docker · Nginx · Microsoft 365</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-16">
+        <div class="reveal grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Sobre mí</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Perfil técnico con mentalidad de mejora continua</h2>
+          </div>
+
+          <div class="soft-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p class="text-base leading-8 text-slate-600">
+              Soy un perfil junior orientado a Cloud y DevOps, con experiencia práctica apoyando operaciones de
+              infraestructura y automatización. Me enfoco en crear soluciones útiles con <strong class="font-semibold text-slate-900">Python</strong>,
+              administrar entornos <strong class="font-semibold text-slate-900">Linux</strong> y aportar soporte técnico en plataformas corporativas como
+              <strong class="font-semibold text-slate-900">Microsoft 365</strong>. Me interesa optimizar procesos, documentar soluciones y seguir creciendo en
+              despliegues, contenedores y servicios cloud con buenas prácticas de operación.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 p-4">
+                <p class="text-sm text-slate-500">Automatización</p>
+                <p class="mt-2 font-semibold text-slate-900">Scripts en Python para tareas de infraestructura y limpieza operativa</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 p-4">
+                <p class="text-sm text-slate-500">Administración</p>
+                <p class="mt-2 font-semibold text-slate-900">Linux, Nginx, Docker y soporte sobre herramientas corporativas M365</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-16">
+        <div class="reveal flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Proyectos destacados</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Experiencia aplicada a desarrollo e infraestructura</h2>
+          </div>
+          <p class="max-w-xl text-sm leading-7 text-slate-500">
+            Proyectos orientados a resolver necesidades reales en entornos web, automatización y operación técnica.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <article class="reveal project-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Proyecto 01</p>
+                <h3 class="mt-3 text-2xl font-bold text-slate-950">Innovafix</h3>
+              </div>
+              <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">Web Platform</span>
+            </div>
+
+            <p class="mt-5 text-base leading-8 text-slate-600">
+              Plataforma enfocada en una solución web robusta con backend estructurado y despliegue sobre infraestructura Linux.
+              Diseñada para combinar desarrollo funcional, contenedorización y configuración de servicios web.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">Django</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">Docker</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">Nginx</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">MySQL 8</span>
+            </div>
+
+            <ul class="mt-6 space-y-3 text-sm leading-7 text-slate-600">
+              <li>• Arquitectura preparada para entornos Linux con separación clara entre app, base de datos y servidor web.</li>
+              <li>• Orientado a buenas prácticas de despliegue inicial para un stack moderno y mantenible.</li>
+            </ul>
+
+            <div class="mt-8">
+              <a
+                data-link="innovafix"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+              >
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="reveal project-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Proyecto 02</p>
+                <h3 class="mt-3 text-2xl font-bold text-slate-950">Python Automation</h3>
+              </div>
+              <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700">Infra Automation</span>
+            </div>
+
+            <p class="mt-5 text-base leading-8 text-slate-600">
+              Automatización orientada a la depuración de backups duplicados en almacenamiento NAS, con foco en eficiencia operativa,
+              control del espacio y apoyo a procesos relacionados con Veeam y gestión de respaldos.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">Automation</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">NAS</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">Veeam</span>
+            </div>
+
+            <ul class="mt-6 space-y-3 text-sm leading-7 text-slate-600">
+              <li>• Script diseñado para identificar duplicados y apoyar la liberación de almacenamiento en infraestructura de backups.</li>
+              <li>• Solución pensada para reducir tareas manuales y mejorar la visibilidad operativa del entorno.</li>
+            </ul>
+
+            <div class="mt-8">
+              <a
+                data-link="automation"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+              >
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-16">
+        <div class="reveal">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Tech Stack</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Tecnologías con las que trabajo</h2>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-blue-50 text-blue-700 font-bold">Py</div>
+            <div>
+              <p class="font-semibold text-slate-900">Python</p>
+              <p class="text-sm text-slate-500">Automatización y scripting</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-sky-50 text-sky-700 font-bold">DK</div>
+            <div>
+              <p class="font-semibold text-slate-900">Docker</p>
+              <p class="text-sm text-slate-500">Contenedores y despliegue</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-slate-100 text-slate-700 font-bold">NG</div>
+            <div>
+              <p class="font-semibold text-slate-900">Nginx</p>
+              <p class="text-sm text-slate-500">Servidor web y reverse proxy</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-amber-50 text-amber-700 font-bold">LX</div>
+            <div>
+              <p class="font-semibold text-slate-900">Linux</p>
+              <p class="text-sm text-slate-500">Ubuntu / CentOS</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-orange-50 text-orange-700 font-bold">AWS</div>
+            <div>
+              <p class="font-semibold text-slate-900">AWS</p>
+              <p class="text-sm text-slate-500">Cloud Practitioner en curso</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700 font-bold">SQL</div>
+            <div>
+              <p class="font-semibold text-slate-900">SQL</p>
+              <p class="text-sm text-slate-500">Modelado y consultas</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 font-bold">M365</div>
+            <div>
+              <p class="font-semibold text-slate-900">Microsoft 365</p>
+              <p class="text-sm text-slate-500">Soporte y operación corporativa</p>
+            </div>
+          </div>
+
+          <div class="reveal soft-card flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="icon-chip flex items-center justify-center rounded-2xl bg-violet-50 text-violet-700 font-bold">Git</div>
+            <div>
+              <p class="font-semibold text-slate-900">Git</p>
+              <p class="text-sm text-slate-500">Versionamiento y colaboración</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-16">
+        <div class="reveal rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Contacto</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Construyamos algo útil</h2>
+            <p class="mt-4 text-base leading-8 text-slate-600">
+              Estoy disponible para oportunidades junior en Cloud, DevOps, Infraestructura y automatización.
+              Puedes editar fácilmente los enlaces de esta sección desde el objeto <code class="rounded bg-slate-100 px-2 py-1 text-sm">portfolioLinks</code>
+              en el script del archivo.
+            </p>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              data-link="linkedin"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+              aria-label="Abrir LinkedIn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                <path d="M6.94 6.5A1.44 1.44 0 1 1 4.06 6.5a1.44 1.44 0 0 1 2.88 0ZM4.5 8.75h2.88V19.5H4.5V8.75Zm4.69 0h2.76v1.47h.04c.38-.73 1.33-1.5 2.74-1.5 2.94 0 3.48 1.94 3.48 4.46v6.32h-2.88v-5.6c0-1.34-.02-3.06-1.86-3.06-1.86 0-2.14 1.46-2.14 2.96v5.7H9.2V8.75Z" />
+              </svg>
+              LinkedIn
+            </a>
+
+            <a
+              data-link="github"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+              aria-label="Abrir GitHub"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-1.04-.02-1.89-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.96 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.55 9.55 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.3 2.74-1.03 2.74-1.03.56 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.86-2.34 4.71-4.58 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10 10 0 0 0 12 2Z" clip-rule="evenodd" />
+              </svg>
+              GitHub
+            </a>
+
+            <a
+              data-link="cv"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-sky-700"
+              aria-label="Descargar CV"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                <path d="M12 16a.75.75 0 0 1-.53-.22l-3-3a.75.75 0 1 1 1.06-1.06l1.72 1.72V4.75a.75.75 0 0 1 1.5 0v8.69l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3A.75.75 0 0 1 12 16Z" />
+                <path d="M4.75 15a.75.75 0 0 1 .75.75v1.5A1.75 1.75 0 0 0 7.25 19h9.5a1.75 1.75 0 0 0 1.75-1.75v-1.5a.75.75 0 0 1 1.5 0v1.5a3.25 3.25 0 0 1-3.25 3.25h-9.5A3.25 3.25 0 0 1 4 17.25v-1.5A.75.75 0 0 1 4.75 15Z" />
+              </svg>
+              Descargar mi CV
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200/80 bg-white/80">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <p>© <span id="currentYear"></span> David Santiago Benavides.</p>
+      </div>
+    </footer>
+
+    <script>
+      const portfolioLinks = {
+        linkedin: "https://www.linkedin.com/in/benavides-cobo-david-santiago-531baa223/",
+        github: "https://github.com/scBenavides",
+        cv: "./David_Santiago_Benavides_CV.pdf",
+        innovafix: "https://github.com/scBenavides/InnovaFix",
+        automation: "https://github.com/scBenavides/Python-Automation"
+      };
+
+      document.querySelectorAll("[data-link]").forEach((element) => {
+        const key = element.dataset.link;
+        if (portfolioLinks[key]) {
+          element.href = portfolioLinks[key];
+        }
+      });
+
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+      document.querySelectorAll(".reveal").forEach((item, index) => {
+        item.style.transitionDelay = `${index * 90}ms`;
+        observer.observe(item);
+      });
+    </script>
+  </body>
+</html>
